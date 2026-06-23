@@ -1,0 +1,12 @@
+.wallpaper-preview {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.mobile-preview {
+    width: 300px;
+    height: auto;
+    margin-right: 100px;
+}

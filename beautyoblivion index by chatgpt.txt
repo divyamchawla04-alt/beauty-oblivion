@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beauty Oblivion</title>
+</head>
+<body>
+
+    <h1>Beauty Oblivion</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Wallpapers</a>
+        <a href="#">About</a>
+    </nav>
+
+    <img src="wallpaper.jpg" alt="Wallpaper" width="500">
+
+    <br><br>
+
+    <a href="wallpaper.jpg" download>
+        <button>Download Wallpaper</button>
+    </a>
+
+</body>
+</html>

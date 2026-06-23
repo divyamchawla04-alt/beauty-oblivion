@@ -1,0 +1,110 @@
+.hero {
+    text-align: center;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    
+}
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 0px; /* Makes it rectangular */
+    align-items: center;
+    margin-top: 5%;
+   
+}
+.cta-button:hover {
+    background-color: transparent;
+    color: white;
+}
+html { 
+    scroll-behavior: smooth;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: black;
+    
+   
+}
+
+h2 {
+    color: white;
+}
+
+h3, h4 { 
+    color: black;
+} 
+h2 {
+    font-size: 60px;
+   
+    padding-top: 10%;
+margin: 10px;
+
+}
+
+h3 {
+    text-align: center;
+    margin-top: 260px; 
+
+}
+button {
+ display: block;
+ margin: auto;
+ margin-bottom: 80px;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.gallery img{
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+   
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+   text-align: center; 
+
+}
+
+.category-page-image {
+    
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.needs .categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   
+    text-align: center;
+    
+}
+.needs, .categories img {
+     width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
