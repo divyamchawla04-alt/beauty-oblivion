@@ -1,6 +1,6 @@
 .hero {
     text-align: center;
-    background-image: url('starry-sky.jpg');
+    background-image: url('alien-landscape-wallpaper-4k-starry-sky-amoled.jpg.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -68,7 +68,7 @@ button {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: b;
     font-size: 18px;
 }
 .gallery img{
@@ -94,17 +94,22 @@ nav a {
     display: block;
     margin: auto;
 }
-.needs .categories {
+.categories {
     display: flex;
     justify-content: center;
     gap: 20px;
    
     text-align: center;
-    
 }
-.needs, .categories img {
+.categories img {
      width: 250px;
     height: 150px;
     object-fit: cover;
 }
 
+.need {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: space-around;
+}
