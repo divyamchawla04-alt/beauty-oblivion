@@ -1,0 +1,35 @@
+.preview img {
+  width: 100%;
+  max-width: 800px;
+  width: auto; /* Adjust this to your liking */
+  height: auto;
+  display: block;
+  max-height: 400px;
+}
+.version-tabs button {
+    background: rgb(205, 137, 36);
+    color: white;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+.version-tabs button.active {
+    background: white;
+    color: black;
+}
+.related-grid {
+  background-color: rgb(107, 249, 251);
+  display: flex;
+  flex: grid;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+
+}
+.related-wallpapers img{
+   width: 250px;
+    height: 150px;
+   margin-top: 15px;
+
+    
+}
