@@ -142,15 +142,19 @@ align-content: center;
    
 }
 
-.pick{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+.wallpaper-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
 }
 
-.pick img{
-    width: 30%;
-    height: 300px;
-    object-fit: cover;
-    display: block;
+.wallpaper-grid a{
+    display:block;
+}
+
+.wallpaper-grid img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    display:block;
 }
