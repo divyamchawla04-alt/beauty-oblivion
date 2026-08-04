@@ -115,12 +115,6 @@ nav a {
     */
 
 
-.need {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-}
 
 .categories {
     display: flex;
@@ -157,4 +151,146 @@ align-content: center;
     height:300px;
     object-fit:cover;
     display:block;
+}
+
+.mobile-section{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:white;
+
+    padding:70px;
+
+    border-radius:20px;
+
+    margin:60px auto;
+
+    width:90%;
+}
+
+.mobile-text{
+
+    width:50%;
+}
+
+.mobile-image{
+
+    width:40%;
+
+    text-align:center;
+}
+
+.mobile-image img{
+
+    width:250px;
+
+    transform:rotate(-15deg);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.mobile-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#000;
+
+    color:white;
+
+    padding:15px 30px;
+
+    text-decoration:none;
+
+    border-radius:10px;
+}
+
+.section-tag{
+    color:#7a7a7a;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:20px;
+    line-height:1.7;
+    color:#222;
+    margin-bottom:30px;
+}
+
+.subtitle strong{
+    color:#000;
+}
+
+.amoled-section{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    width:90%;
+
+    margin:70px auto;
+
+    padding:60px;
+
+    background:#111;
+
+    color:white;
+
+    border-radius:20px;
+}
+
+.amoled-content{
+
+    width:50%;
+}
+
+.amoled-image{
+
+    width:40%;
+
+    text-align:center;
+}
+
+.amoled-image img{
+
+    width:280px;
+
+    transform:rotate(12deg);
+
+    border-radius:20px;
+}
+
+.battery-icon{
+
+    width:60px;
+
+    margin-bottom:20px;
+}
+
+.amoled-btn{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:15px 30px;
+
+    background:white;
+
+    color:black;
+
+    text-decoration:none;
+
+    border-radius:10px;
 }
