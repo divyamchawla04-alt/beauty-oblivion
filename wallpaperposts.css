@@ -28,3 +28,18 @@
 .image-preview-in-category img:hover{ 
     transform: scale(1.03)
 }
+nav a {
+    text-decoration: none;
+    color: b;
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: black;
+    
+   
+}
