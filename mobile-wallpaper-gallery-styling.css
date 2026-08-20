@@ -1,0 +1,119 @@
+/* ==============================
+   MOBILE WALLPAPER CATEGORY GRID
+   ============================== */
+
+.mobile-wallpaper-gallery {
+    width: 92%;
+    max-width: 1200px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* Individual wallpaper */
+
+.mobile-wallpaper-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+/* 1080 × 2400 = 9:20 */
+
+.mobile-wallpaper-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 9 / 20;
+    object-fit: cover;
+}
+
+
+/* Wallpaper title */
+
+.mobile-wallpaper-card h2 {
+    margin: 14px 15px 8px;
+
+    font-size: 16px;
+    line-height: 1.4;
+
+    color: #222;
+}
+
+
+/* View/download button */
+
+.mobile-wallpaper-card .view-button {
+    display: inline-block;
+
+    margin: 0 15px 15px;
+    padding: 9px 14px;
+
+    background: #111;
+    color: #fff;
+
+    text-decoration: none;
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+
+/* Hover */
+
+.mobile-wallpaper-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+}
+
+
+/* ==============================
+   TABLET
+   ============================== */
+
+@media (max-width: 900px) {
+
+    .mobile-wallpaper-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+}
+
+
+/* ==============================
+   MOBILE
+   ============================== */
+
+@media (max-width: 600px) {
+
+    .mobile-wallpaper-gallery {
+        width: 94%;
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .mobile-wallpaper-card h2 {
+        margin: 10px 10px 7px;
+
+        font-size: 14px;
+    }
+
+    .mobile-wallpaper-card .view-button {
+        margin: 0 10px 12px;
+
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+}
