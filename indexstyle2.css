@@ -1,0 +1,842 @@
+```css
+/* =========================================================
+   BEAUTY OBLIVION — INDEX PAGE
+   Combined + Responsive CSS
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #000;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url('alien-landscape-wallpaper-4k-starry-sky-amoled.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+
+    padding-top: 150px;
+}
+
+
+/* HERO HEADING */
+
+h2 {
+    color: white;
+    font-size: 60px;
+    line-height: 1.2;
+
+    padding-top: 10%;
+    margin: 10px;
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h3 {
+    color: black;
+    text-align: center;
+}
+
+h4 {
+    color: black;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+   ========================================================= */
+
+.cta-button {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background-color: white;
+    color: black;
+
+    text-decoration: none;
+
+    border-radius: 0;
+
+    margin-top: 5%;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+/* =========================================================
+   GENERAL BUTTON
+   ========================================================= */
+
+button {
+    display: block;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+
+/* =========================================================
+   CATEGORY SECTION
+   ========================================================= */
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-content: center;
+
+    gap: 15px;
+
+    width: 100%;
+
+    background-color: orange;
+
+    padding: 20px;
+}
+
+
+/* CATEGORY IMAGES */
+
+.categories img {
+    width: 250px;
+    max-width: 100%;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   CATEGORY PAGE IMAGE
+   ========================================================= */
+
+.category-page-image {
+    display: block;
+
+    width: 100%;
+    max-width: 300px;
+
+    height: auto;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   GALLERY
+   ========================================================= */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 15px;
+
+    width: 100%;
+}
+
+
+/* GALLERY IMAGES */
+
+.gallery img {
+    width: 300px;
+    max-width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   WALLPAPER GRID
+   ========================================================= */
+
+.wallpaper-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 20px;
+
+    width: 100%;
+}
+
+
+.wallpaper-grid a {
+    display: block;
+}
+
+
+.wallpaper-grid img {
+    display: block;
+
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   CATEGORY IMAGE PREVIEWS
+   ========================================================= */
+
+.image-preview-in-category {
+    display: inline-block;
+
+    width: 300px;
+    max-width: 100%;
+
+    margin: 5px;
+
+    vertical-align: top;
+}
+
+
+.image-preview-in-category img {
+    width: 300px;
+    max-width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    transition: transform 0.2s;
+}
+
+
+.image-preview-in-category img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   WALLPAPER PREVIEW
+   ========================================================= */
+
+.wallpaper-preview {
+    display: block;
+
+    width: 100%;
+    max-width: 1200px;
+
+    height: auto;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   MOBILE PREVIEW
+   ========================================================= */
+
+.mobile-preview {
+    display: block;
+
+    width: 300px;
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 20px auto;
+}
+
+
+/* =========================================================
+   MOBILE WALLPAPER SECTION
+   ========================================================= */
+
+.mobile-section {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 60px auto;
+    padding: 70px;
+
+    background: white;
+
+    border-radius: 20px;
+}
+
+
+/* MOBILE TEXT */
+
+.mobile-text {
+    width: 50%;
+}
+
+
+/* MOBILE IMAGE CONTAINER */
+
+.mobile-image {
+    width: 40%;
+
+    text-align: center;
+}
+
+
+/* MOBILE IMAGE */
+
+.mobile-image img {
+    width: 250px;
+    max-width: 100%;
+
+    height: auto;
+
+    transform: rotate(-15deg);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+/* MOBILE BUTTON */
+
+.mobile-btn {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 15px 30px;
+
+    background: #000;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   SECTION TAG
+   ========================================================= */
+
+.section-tag {
+    color: #7a7a7a;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   SUBTITLE
+   ========================================================= */
+
+.subtitle {
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    color: #222;
+
+    margin-bottom: 30px;
+}
+
+
+.subtitle strong {
+    color: #000;
+}
+
+
+/* =========================================================
+   AMOLED SECTION
+   ========================================================= */
+
+.amoled-section {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 70px auto;
+
+    padding: 60px;
+
+    background: #111;
+
+    color: white;
+
+    border-radius: 20px;
+}
+
+
+/* AMOLED CONTENT */
+
+.amoled-content {
+    width: 50%;
+}
+
+
+/* AMOLED IMAGE CONTAINER */
+
+.amoled-image {
+    width: 40%;
+
+    text-align: center;
+}
+
+
+/* AMOLED IMAGE */
+
+.amoled-image img {
+    width: 280px;
+    max-width: 100%;
+
+    height: auto;
+
+    transform: rotate(12deg);
+
+    border-radius: 20px;
+}
+
+
+/* BATTERY ICON */
+
+.battery-icon {
+    width: 60px;
+
+    margin-bottom: 20px;
+}
+
+
+/* AMOLED BUTTON */
+
+.amoled-btn {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 15px 30px;
+
+    background: white;
+    color: black;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    h2 {
+        font-size: 48px;
+    }
+
+    .mobile-section,
+    .amoled-section {
+        padding: 40px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE — 768px AND BELOW
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* GENERAL */
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* =====================================================
+       HEADER
+       ===================================================== */
+
+    header {
+        flex-direction: column;
+
+        width: 100%;
+
+        padding: 15px 10px;
+    }
+
+
+    /* =====================================================
+       NAVIGATION
+       ===================================================== */
+
+    nav {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 8px;
+
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 14px;
+
+        padding: 5px;
+    }
+
+
+    /* =====================================================
+       HERO
+       ===================================================== */
+
+    .hero {
+        min-height: 100vh;
+
+        height: auto;
+
+        padding: 100px 20px 60px;
+
+        background-position: center;
+    }
+
+
+    h2 {
+        font-size: 38px;
+
+        line-height: 1.2;
+
+        padding-top: 10%;
+
+        margin: 10px;
+    }
+
+
+    /* =====================================================
+       CTA
+       ===================================================== */
+
+    .cta-button {
+        padding: 13px 24px;
+
+        margin-top: 30px;
+    }
+
+
+    /* =====================================================
+       CATEGORIES
+       ===================================================== */
+
+    .categories {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        justify-items: center;
+
+        gap: 20px;
+
+        padding: 20px 15px;
+    }
+
+
+    .categories img {
+        width: 100%;
+
+        max-width: 350px;
+
+        height: auto;
+
+        margin: 0;
+    }
+
+
+    /* =====================================================
+       GALLERY
+       ===================================================== */
+
+    .gallery {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 15px;
+    }
+
+
+    .gallery img {
+        width: 100%;
+
+        max-width: 100%;
+
+        height: auto;
+    }
+
+
+    /* =====================================================
+       WALLPAPER GRID
+       ===================================================== */
+
+    .wallpaper-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 15px;
+    }
+
+
+    .wallpaper-grid img {
+        width: 100%;
+
+        height: auto;
+
+        object-fit: contain;
+    }
+
+
+    /* =====================================================
+       CATEGORY PREVIEWS
+       ===================================================== */
+
+    .image-preview-in-category {
+        display: block;
+
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 10px 0;
+    }
+
+
+    .image-preview-in-category img {
+        width: 100%;
+
+        max-width: 100%;
+
+        height: auto;
+    }
+
+
+    /* =====================================================
+       WALLPAPER PREVIEW
+       ===================================================== */
+
+    .wallpaper-preview {
+        width: 100%;
+
+        max-width: 100%;
+
+        height: auto;
+    }
+
+
+    /* =====================================================
+       MOBILE PREVIEW
+       ===================================================== */
+
+    .mobile-preview {
+        width: 80%;
+
+        max-width: 300px;
+
+        height: auto;
+
+        margin: 20px auto;
+    }
+
+
+    /* =====================================================
+       MOBILE SECTION
+       ===================================================== */
+
+    .mobile-section {
+        flex-direction: column;
+
+        width: auto;
+
+        margin: 30px 15px;
+
+        padding: 30px 20px;
+
+        border-radius: 15px;
+    }
+
+
+    .mobile-text {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .mobile-image {
+        width: 100%;
+
+        margin-top: 30px;
+    }
+
+
+    .mobile-image img {
+        width: 70%;
+
+        max-width: 250px;
+
+        height: auto;
+    }
+
+
+    /* =====================================================
+       AMOLED SECTION
+       ===================================================== */
+
+    .amoled-section {
+        flex-direction: column;
+
+        width: auto;
+
+        margin: 30px 15px;
+
+        padding: 30px 20px;
+
+        border-radius: 15px;
+    }
+
+
+    .amoled-content {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .amoled-image {
+        width: 100%;
+
+        margin-top: 30px;
+    }
+
+
+    .amoled-image img {
+        width: 75%;
+
+        max-width: 280px;
+
+        height: auto;
+    }
+
+
+    /* =====================================================
+       TEXT
+       ===================================================== */
+
+    .subtitle {
+        font-size: 17px;
+
+        line-height: 1.6;
+    }
+
+
+    .section-tag {
+        font-size: 12px;
+    }
+
+
+    /* =====================================================
+       BUTTONS
+       ===================================================== */
+
+    .mobile-btn,
+    .amoled-btn,
+    .cta-button {
+        max-width: 100%;
+
+        padding: 13px 22px;
+    }
+
+}
+```
